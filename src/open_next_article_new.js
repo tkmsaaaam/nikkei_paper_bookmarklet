@@ -11,7 +11,7 @@ javascript:(
     const articles = doc.getElementById('CONTENTS_MAIN').getElementsByTagName('h4');
     for (let l = 0; l < articles.length; l++) {
       const articlesElement = articles[l];
-      if (articlesElement.className === 'cmn-hide') {
+      if (articlesElement.className !== 'cmn-article_title') {
         continue;
       }else {
         const rawParams = articlesElement.getElementsByTagName('span')[0].getElementsByTagName('a')[0].href;
