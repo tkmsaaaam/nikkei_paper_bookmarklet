@@ -9,17 +9,15 @@ javascript:(
       const ids = [];
       const parser = new DOMParser();
       const doc = parser.parseFromString(res, "text/html");
-      const articles = doc.getElementById('CONTENTS_MAIN').getElementsByTagName('h4');
+      const articles = doc.getElementsByClassName('cmn-article_title');
       for (let l = 0; l < articles.length; l++) {
         const articlesElement = articles[l];
-        if (articlesElement.className !== 'cmn-article_title') {
-          continue;
-        }else {
-          const rawParams = articlesElement.getElementsByTagName('span')[0].getElementsByTagName('a')[0].href;
-          const params = new URLSearchParams(rawParams);
-          const id = params.get("ng");
-          ids.push(id);
-        }
+        const rawParams = articlesElement.getElementsByTagName('span')[0].getElementsByTagName('a')[0];
+        if (!rawParams) { continue; };
+        const params = new URLSearchParams(rawParams.href);
+        const id = params.get("ng");
+        if (id === null) { continue; };
+        ids.push(id);
       };
   
       const params = new URLSearchParams(location.search);
