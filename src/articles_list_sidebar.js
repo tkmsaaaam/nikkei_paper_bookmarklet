@@ -35,8 +35,8 @@ javascript: (async () => {
       )}${mark}</a><br>`;
     }
     document
-      .getElementsByClassName("infoNikkei")[0]
-      .insertAdjacentHTML("afterend", html);
+      .getElementsByClassName("cmn-sub_rightbox")[0]
+      .insertAdjacentHTML("beforebegin", html);
     return;
   } catch (e) {
     console.log(e);
