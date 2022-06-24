@@ -20,6 +20,12 @@
     - https://www.nikkei.com/paper/evening
   - ファイルURL: 
     - https://github.com/tkmsaaaam/nikkei_paper_bookmarklet/tree/main/src/open_next_page_top.js
+- 記事ページにて、記事一覧を表示
+  - 記事詳細ページから記事一覧に戻ることなく一覧を確認することができる
+  - 対象URL:
+    - https://www.nikkei.com/paper/article
+  - ファイルURL: 
+    - https://github.com/tkmsaaaam/nikkei_paper_bookmarklet/tree/main/src/articles_list_sidebar.js  
 
 ### TODO
 - いつかExtensionにする
