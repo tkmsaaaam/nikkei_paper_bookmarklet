@@ -1,5 +1,6 @@
 ### これはなに
 - 日本経済新聞電子版（日経電子版）朝刊・夕刊のWebページ https://www.nikkei.com/paper/ の操作を楽にするbookmarklet
+- Chrome Extension -> [nikkei-paper-extension](https://github.com/tkmsaaaam/nikkei-paper-extension)
 
 ### 使い方
 1. `/src` に存在する、JavaScriptファイルをダウンロードまたはコピーする
@@ -26,6 +27,3 @@
     - https://www.nikkei.com/paper/article
   - ファイルURL: 
     - https://github.com/tkmsaaaam/nikkei_paper_bookmarklet/tree/main/src/articles_list_sidebar.js  
-
-### TODO
-- いつかExtensionにする
